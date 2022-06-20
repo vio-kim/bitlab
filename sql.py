@@ -116,14 +116,10 @@ while True:
     choice = input()
 
     if choice == "1":
-        print("insert login:")
-        login = input()
-        print("insert name:")
-        name = input()
-        print("insert surname:")
-        surname = input()
-        print("insert age:")
-        age = int(input())
+        login = input("insert login: ")
+        name = input("insert name: ")
+        surname = input("insert surname: ")
+        age = int(input("insert age: "))
 
         addUser(login,name,surname,age)
 
@@ -152,14 +148,11 @@ while True:
         print("choose id of user to update:")
         id = input()
 
-        print("insert new login:")
-        login = input()
-        print("insert new name:")
-        name = input()
-        print("insert new surname:")
-        surname = input()
-        print("insert new age:")
-        age = input()
+      
+        login = input("insert new login: ")
+        name = input("insert new name: ")
+        surname = input("insert new surname: ")
+        age = input("insert new age: ")
 
         updateUser(id, login, name, surname, age)
 
